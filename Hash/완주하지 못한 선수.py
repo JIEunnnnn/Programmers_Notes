@@ -1,5 +1,5 @@
 # LV.1 완주하지못한선수
-
+# 리스트 정렬 및 pop() 메소드 활용
 
 def solution(participant, completion):
     
@@ -21,3 +21,6 @@ def solution(participant, completion):
         
 
     return answer
+
+
+
