@@ -1,4 +1,6 @@
 # LV.1 완주하지못한선수
+# 참여자 participant, 완수자 completion 중에서 미완수자 찾기 
+#
 # 리스트 정렬 및 pop() 메소드 활용
 
 def solution(participant, completion):
