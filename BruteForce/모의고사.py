@@ -2,7 +2,7 @@
 # 가장많이 맞추는 수포자 찾기:) 
 #
 # 다차원리스트 정렬 및 append() 메소드 사용
-#
+
 # 다차원리스트를 정렬시키는 라이브러리 
 from operator import itemgetter 
 
