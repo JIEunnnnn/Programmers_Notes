@@ -19,6 +19,7 @@
      sorted #리스트데이터를 오름차,내림차순 정렬  
      push, pop #popleft (deque라이브러리사용)  
      append  
+     
 >    2. collections 라이브러리  
      counter #단어->알파벳갯수와 최다출현을 딕셔너리로 반환 ex) {'headgear': 2, 'eyewear': 1}  
      defaultdict #dict형태를 데이터를 append(리스트메소드)사용하고 싶을 때 
