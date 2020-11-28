@@ -1,5 +1,5 @@
 ## Programming_Notes
-> 1일1코테중 :)
+> 1일1코테중 
 >> 프로그래머스 문제풀이  
 https://programmers.co.kr/learn/challenges  
    
