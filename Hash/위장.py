@@ -10,7 +10,7 @@ def solution(clothes):
     answer = 1
     clothesDict = Counter([x[1] for x in clothes]) # 딕셔너리형태로 자료개수 구하기
                                                    # x[1] 은 clothes[x][1] 의미 ㅇㅇ
-    print(clothesDict)
+    print(clothesDict) #{'headgear': 2, 'eyewear': 1}
     for v in clothesDict.values():
         answer *= (v+1)  # 의상종류 별 의상수에 그 의상을 안 입는 경우의 수도 포함하여 계산하기...ㅠ
     answer -= 1 # 아예 입지않는 경우
