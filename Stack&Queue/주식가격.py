@@ -25,10 +25,10 @@ def solution(prices):
     price_dq = deque(prices)
     answer = []
     
-    sz = len(price_dq) -1
+    sz = len(price_dq) -1 #전체시간을 sz
     for i in range(len(price_dq)) :
         flag = 0
-        tag = price_dq.popleft()
+        tag = price_dq.popleft() #시간초과주원인..
         for j in range(len(price_dq)) :
             if tag > price_dq[j] :
                 flag = 1
@@ -36,6 +36,7 @@ def solution(prices):
                 break
                
         if flag != 1 : 
-            answer.append(sz - i)       
+            answer.append(sz - i) #전체시간 - 출현시간
+                                  #굳이 이런방식말고 for문돌릴때 +=1 하는것이나은듯
                   
     return answer
