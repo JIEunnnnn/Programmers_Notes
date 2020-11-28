@@ -20,7 +20,7 @@
      push, pop #popleft (deque라이브러리사용)  
      append  
 >    2. collections 라이브러리  
-     counter #주어진 단어에서 가장 많이 등장하는 알벳과 그 알파벳의 개수를 구하는 함수를 딕셔너리형태로 반환 ex) {'headgear': 2, 'eyewear': 1}  
+     counter #단어->알파벳갯수와 최다출현을 딕셔너리로 반환 ex) {'headgear': 2, 'eyewear': 1}  
      defaultdict #dict형태를 데이터를 append(리스트메소드)사용하고 싶을 때 
      
 >    3. operator 라이브러리  
