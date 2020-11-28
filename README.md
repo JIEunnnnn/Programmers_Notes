@@ -15,9 +15,9 @@
 ## 파이썬 기본라이브러리
 
 
->   1. 기본 메소드 
-     sorted // 리스트데이터를 오름차,내림차순 정렬
-     push, pop // popleft (deque라이브러리사용)
+>   1. 기본 메소드  
+     sorted // 리스트데이터를 오름차,내림차순 정렬  
+     push, pop // popleft (deque라이브러리사용)  
      append  
      2. collections 라이브러리  
      딕셔너리형태로 반환 및  갯수비교 시 counter 유용하게 쓰이는 중  
