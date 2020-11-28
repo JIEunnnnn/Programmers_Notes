@@ -16,14 +16,18 @@
 
 
 >    1. 기본 메소드  
-     sorted // 리스트데이터를 오름차,내림차순 정렬  
-     push, pop // popleft (deque라이브러리사용)  
+     sorted #리스트데이터를 오름차,내림차순 정렬  
+     push, pop #popleft (deque라이브러리사용)  
      append  
-     2. collections 라이브러리  
-     딕셔너리형태로 반환 및  갯수비교 시 counter 유용하게 쓰이는 중  
-     3. operator 라이브러리  
-     다차원리스트 정렬시킬때 활용하는 라이브러리   
-     4. itertools 라이브러리    
-     순열과 조합 관련 문제풀때 용이
-     5. math 라이브러리  
+>    2. collections 라이브러리  
+     counter #주어진 단어에서 가장 많이 등장하는 알벳과 그 알파벳의 개수를 구하는 함수를 딕셔너리형태로 반환 ex) {'headgear': 2, 'eyewear': 1}  
+     defaultdict #dict형태를 데이터를 append(리스트메소드)사용하고 싶을 때 
+     
+>    3. operator 라이브러리  
+     itemgetter #다차원리스트 정렬시킬때 활용하는 라이브러리   
+     
+>     4. itertools 라이브러리
+     permutations #순열과 조합 관련 문제풀때 용이  
+                  #중복을 허용하지않는 순열
+>     5. math 라이브러리  
      제곱근 연산시,...(소수판별할때 제곱근으로 판별해야함 => 시간초과)
