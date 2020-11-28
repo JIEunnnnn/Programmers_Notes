@@ -1,6 +1,7 @@
 ## Programming_Notes
 > 프로그래머스 문제풀이 :)
->> https://programmers.co.kr/learn/challenges
+>> https://programmers.co.kr/learn/challenges  
+   1일1코테하기
   
 <br>    
 
@@ -12,6 +13,9 @@
     list(리스트/ 동적배열)  
     str,tuple,bytes(시퀀스/ 불변 및 순서가있는 수열)
     
+<br>
+
+
 ## 파이썬 기본라이브러리
 
 
