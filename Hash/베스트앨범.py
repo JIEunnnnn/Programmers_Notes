@@ -39,7 +39,7 @@ def solution(genres, plays):
     for j in range(len(genr_dict)): #list
         for i,d in genr_index_dict.items() : #dict
             d.sort(key=lambda x : x[1], reverse=True) 
-            # (인덱스, 재생횟수) 에서 횟수기준으로 내림차순
+            #(인덱스, 재생횟수) 에서 횟수기준으로 내림차순
             if genr_dict[j][0] in i :
                 
                 
