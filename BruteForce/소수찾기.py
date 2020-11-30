@@ -6,7 +6,9 @@
 
 #순열관련 라이브러리 
 #순열은 순서상관O, 조합은 순서상관X
+
 from itertools import permutations 
+
 #제곱근 수행하기 위한 라이브러리 
 import math 
 
