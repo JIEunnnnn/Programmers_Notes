@@ -22,7 +22,7 @@ def solution(progresses, speeds):
                 tag = spd
                 ans_dct[spd] = 1 
         else : 
-            if spd < tag : # 현재작업 일자 < 전 작업의 일자 => 전작업일자 +=1
+            if spd < tag : #현재작업 일자 < 전 작업의 일자 => 전작업일자 +=1
                 ans_dct[tag] +=1
             else :    
                 ans_dct[spd] +=1 
