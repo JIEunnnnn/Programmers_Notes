@@ -17,6 +17,7 @@ def solution(prices):
 
 
 ======================================================================
+#1차시도
 #시간초과발생 => pop()&deque() 사용시 효율성 ZERO
 
 from collections import deque 
