@@ -44,7 +44,7 @@ def solution(priorities, location):
 
 
 ==================================================================================
-
+#1차시도
 def solution(priorities, location):
     
     answer = 0
