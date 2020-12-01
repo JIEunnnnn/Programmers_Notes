@@ -1,10 +1,11 @@
 #LV.2 가장큰수
 #주어진 숫자를 조합하여 가장 큰 숫자출력하기 
+#                              **문자열(str)을 lambda x : x* 3 처리시 4 -> 444 로 변환됨 ** 
 #
 # 1. permutations쓰면 시간초과발생 -> NO...
 # 2. map() 메소드를 통해 숫자를 문자열(str)로 반환하고 sort() 로 정렬..
 #    문자열을 sort()시 아스키코드로 비교하여 정렬 // 몰랐다ㅠㅠ 
-#
+# 
 
 def solution(numbers):
     num = list(map(str, numbers))
