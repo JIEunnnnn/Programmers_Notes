@@ -21,9 +21,11 @@ https://programmers.co.kr/learn/challenges
 
 
 >    1. 기본 메소드  
-     sorted #리스트데이터를 오름차,내림차순 정렬  
+     sorted #리스트데이터를 오름차,내림차순 정렬 (b=sorted(a,조건), a.sort(조건)) 
      push, pop #popleft (deque라이브러리사용)  
-     append  
+     append
+     map #리스트형식의 변수변환시 유용 
+     filter #리스트를 lambda를 활용하여 조건에 맞게 추출할수있는 메소드
      
 >    2. collections 라이브러리  
      counter #단어->알파벳갯수와 최다출현을 딕셔너리로 반환 ex) {'headgear': 2, 'eyewear': 1}  
@@ -37,3 +39,6 @@ https://programmers.co.kr/learn/challenges
                   
 >    5. math 라이브러리    
      제곱근 연산시...(소수판별할때 제곱근으로 판별해야함 => 시간초과)
+     
+>    6. heaqp 라이브러리    
+    이진트리 기반의 최소 힙 자료구조 => 리스트를 매번 정렬해야하는 효율성을 감소시킬수있다. 
