@@ -12,19 +12,14 @@ def solution(brown, yellow):
     for i in range(1, area+1) :
         if area%i == 0 :
             num_list.append(i)
-            
-    #print(num_list)
     
     for i in num_list : #가로
-        print("테스트중")
         j = int(area/i) #세로
-        #print(i)
-        #print(j)
         
         if (i-2) * (j-2) == yellow :
             #print("안지나침?")
             if i * j - yellow == brown :
-                if i < j :
+                if i < j : #sort()로 해결가능하겠네ㄷ 
                     answer.append(j)    
                     answer.append(i)
                 else :
