@@ -51,8 +51,7 @@ def solution(answers):
         {'key': 3, 'count': count_a3 }    
     ] 
     
-    listmax = sorted(max, key=itemgetter('count'), reverse=True ) # ount(맞춘갯수)기준으로 내림차순정렬 
-    
+    listmax = sorted(max, key=itemgetter('count'), reverse=True ) # count(맞춘갯수)기준으로 내림차순정렬, 람다식도 가능할거같다                                                                           
     sz = 0 
     compare = listmax[sz]['count']
     while sz < len(listmax) :
