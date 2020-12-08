@@ -34,6 +34,7 @@ def solution(tickets):
 
 =====================================================
 #1차시도 
+#조건여러개고려해야하는게 문제.. + 시간복잡도
 def solution(tickets):
     ticket_queue = []
     for i in tickets :
