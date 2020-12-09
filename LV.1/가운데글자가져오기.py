@@ -16,3 +16,6 @@ def solution(s):
         index = int(len(s)/2)
         print(index)
         return s[index]
+
+    
+    
