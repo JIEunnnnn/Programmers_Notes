@@ -25,6 +25,8 @@ def solution(begin, target, words):
                                     #문자열을 리스트로 변환
                 copy[i] = 0
                 copy_front[i] = 0
+                #한자리씩만 변경하기 위해서 0으로 처리하고 비교함..ㄷㄷ
+                
                 if copy == copy_front:
                     if visited[word] != 0: 
                         #visited가 1이라면 이미 검사했던 단어므로 그냥 넘어간다.
@@ -33,6 +35,7 @@ def solution(begin, target, words):
                         #visited가 0이면 해당 단어의 visited 값을 1로 바꾼다.
                     stacks.append(word)
                     print(stacks)
+                    
                     break
         answer += 1 #Depth 1추가
 
