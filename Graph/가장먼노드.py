@@ -1,3 +1,50 @@
+#LV.3 가장 먼 노드 (BFS)
+#1에서 가장 먼 노드들의 갯수구하는 문제
+#
+# 1. for문으로 돌려 인접한노드 x <-> y 교환하여 구할수있다
+# 2. 방문하지않는 노드를 count 하여 몇번거쳤는지 구할수있음ㄷㄷ 
+
+from collections import deque
+
+def bfs(v, visited, adj):
+    count = 0
+    q = deque([[v, count]]) # (1, 0)
+    while q:
+        #print(q)
+        print(visited)
+        value = q.popleft()
+        v = value[0] #노드 
+        count = value[1] #몇번거치는지를 알려주는 횟수
+        if visited[v] == -1: #노드를 방문하지않았을 경우
+            visited[v] = count
+            count += 1
+            for e in adj[v]:
+                q.append([e, count])
+
+def solution(n, edge):
+    
+    visited = [-1] * (n+1) #edge 크기만큼... 
+    adj = [[] for _ in range(n+1)] 
+    
+    for i in edge :
+        ##########인접한노드구할때##########
+        x = i[0]
+        y = i[1]
+        adj[x].append(y) 
+        adj[y].append(x)
+        #	[[], [3, 2], [3, 1, 4, 5], [6, 4, 2, 1], [3, 2], [2], [3]]
+    bfs(1, visited, adj)
+    for value in visited:
+        if value == max(visited):
+            answer += 1
+    
+    answer = 0
+    return answer
+
+
+
+
+
 ===================================================================================
 #1차시도 
 
