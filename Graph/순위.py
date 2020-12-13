@@ -1,3 +1,49 @@
+#LV.3 순위
+#주어진 자료를 보고 정확하게 순위를 매길수있는 사람구하기
+#
+#시도는 거의 유사했으나 문제를 제대로 이해못함 
+#defaultdict 을 통해 초기화가능!! 
+
+
+#i를 이긴 사람들에게 이긴 사람들은 전부 i를 이길 수 있다
+#i에게 진사람들은 i가 진사람들에게도 전부 진다.
+
+from collections import defaultdict
+
+def solution(n, results):
+    answer = 0
+    
+    #defaultdict은 기본값을 숫자,리스트,셋등으로 초기화가능
+    win = defaultdict(set)
+    lose = defaultdict(set)
+    
+    
+    for a,b in results :
+        win[a].add(b)
+        lose[b].add(a)
+    
+    #print(win)
+    #print(lose)
+    
+    for i in range(1, n+1) :
+        for loser in win[i] :
+            lose[loser] |=lose[i] # |= update의미함
+            # 4에게 진 숫자 3,2 
+            # 숫자 3,2 역시 4가 진것에서는 지는 경기임 => update
+            
+        for winner in lose[i] :
+            win[winner] |= win[i]
+            #3을 이긴 4
+            #숫자 4는 3이 이긴 모든숫자(2) 를 이긴다 
+    
+    #print(win)
+    #print(lose)
+           
+    for i in range(1, n+1) :
+        if len(win[i]) + len(lose[i]) == n-1 :
+            answer+=1 
+            
+    return answer
 
 ==========================================================
 #1차시도
