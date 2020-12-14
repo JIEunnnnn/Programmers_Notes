@@ -1,3 +1,5 @@
+#순엿 => 순서고려한다 (BC, CB), 조합 => 순서고려하지않는다 (BC만)
+
 
 #1차시도
 from itertools import permutations
