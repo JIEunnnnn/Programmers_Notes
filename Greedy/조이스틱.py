@@ -6,7 +6,7 @@
 
 def solution(name):
     
-    name_list = [min(ord(i) - ord('A'), ord('Z')-ord(i)+1) for i in name]
+    name_list = [min(ord(i) - ord('A'), ord('Z')-ord(i)+1) for i in name] #굳이 for문말고...min함수활용하여 작은수구하기 가능...! 
     #위아래 조이스틱횟수 의미
     #print(name_list)
     answer = 0
