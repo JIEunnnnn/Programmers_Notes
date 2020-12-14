@@ -4,6 +4,7 @@
 #조합생각했는데 시간초과발생..
 #순열 => 순서고려한다 (BC, CB), 조합 => 순서고려하지않는다 (BC만)
 
+#결국이문제는 주어진 리스트순서대로 따지는 거기때문에 stack으로 구현가능!  
 #https://kdgt-programmer.tistory.com/5?category=1121942
 
 def solution(number, k):
