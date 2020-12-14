@@ -1,8 +1,7 @@
 #LV.1 체육복
 #lost에 따라 체육수업에 참여할수있는 인원수구하기
 #
-#주어진 배열의 중복값과 lost와 reserve에 해당되는 학생 수 고려...
-#
+#주어진 배열의 중복값과 lost와 reserve에 해당되는 학생 수 고려해야 함 :)
 
 def solution(n, lost, reserve):
     
