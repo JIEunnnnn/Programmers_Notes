@@ -6,10 +6,10 @@
 
 def solution(jobs):
     answer = 0
-    start = 0  # 현재까지 진행된 작업 시간
+    start = 0  #현재까지 진행된 작업 시간
     length = len(jobs)
 
-    jobs = sorted(jobs, key=lambda x: x[1])  # 소요시간을 오름차순으로 정렬하기
+    jobs = sorted(jobs, key=lambda x: x[1])  #소요시간을 오름차순으로 정렬하기
 
     while len(jobs) != 0:
         for i in range(len(jobs)):
@@ -18,8 +18,7 @@ def solution(jobs):
                 answer += start - jobs[i][0]
                 jobs.pop(i)
                 break
-            # 해당시점에 아직 작업이 들어오지 않았으면 시간 ++
-            if i == len(jobs) - 1:
+            if i == len(jobs) - 1: #전체 for문돌려서 start시점의 할당량없을경우 작업시간+1하기
                 start += 1
 
     return answer // length
