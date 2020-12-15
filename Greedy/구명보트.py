@@ -5,6 +5,25 @@
 #반드시 pop()이 필요하지않는경우에는 쓰지말자 => 효율성문제!!! 
 
 def solution(people, limit):
+    
+    people.sort() #오름차순
+    print(people)
+    answer = 0
+    min_people = 0
+    max_people = len(people) -1 
+    
+    while min_people <= max_people : #가장큰사람과 작은사람 비교!! 
+        if people[min_people] + people[max_people] <= limit :
+            answer +=1 
+            min_people +=1 
+            max_people -=1
+        else :
+            answer+=1 
+            max_people -= 1
+    
+    return answer
+
+def solution(people, limit):
     answer = len(people)
     p = sorted(people, reverse = True) #내림차순
     s,e = 0, len(p)-1
