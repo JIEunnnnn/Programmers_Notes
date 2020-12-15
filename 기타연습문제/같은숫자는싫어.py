@@ -2,7 +2,7 @@
 #리스트내에 중복된숫자 제거하는 문제 
 #
 #stack구조 이용 
-3#
+#
 
 def solution(arr):
     
