@@ -24,9 +24,9 @@ https://programmers.co.kr/learn/challenges
      sorted #리스트데이터를 오름차,내림차순 정렬 (b=sorted(a,조건), a.sort(조건)) 
      push, pop #popleft (deque라이브러리사용)  
      append
-     map #리스트형식의 변수타입변환 OR lambda 적용시 사용
+     map #리스트형식의 변수타입변환 OR lambda 적용시 사용, , list의 element에 함수를 적용시켜 결과를 반환하고 싶을 때 사용
      filter #리스트를 lambda를 활용하여 조건에 맞게 추출할수있는 메소드  
-     reduce #리스트의 원소를 누적시 활용
+     reduce #리스트의 원소를 누적시(ex,총합) 활용
      
 >    2. collections 라이브러리  
      counter #단어->알파벳갯수와 최다출현을 딕셔너리로 반환 ex) {'headgear': 2, 'eyewear': 1}  
