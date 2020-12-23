@@ -18,3 +18,5 @@ def solution(n):
             break 
     
     return int(bin_tmp, 2)
+
+
