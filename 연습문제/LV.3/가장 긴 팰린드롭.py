@@ -2,6 +2,28 @@
 
 
 ==========================================================
+#3차시도 => 효율성..
+
+def palidrome(word) : #회문판별식 
+    is_palindrome = True                 
+    for i in range(len(word) // 2):      
+        if word[i] != word[-1 - i]:     
+            is_palindrome = False        
+            break
+    return is_palindrome
+
+def solution(s):
+    answer = 0
+    pali_list = [1,]
+    
+    for i in range(len(s)) :
+        for j in range(1,len(s)) :
+            tmp = palidrome(s[i:j+1])
+            if tmp == True :
+                pali_list.append(len(s[i:j+1]))
+    
+    return max(pali_list)
+
 #2차시도
 
 def solution(s):
