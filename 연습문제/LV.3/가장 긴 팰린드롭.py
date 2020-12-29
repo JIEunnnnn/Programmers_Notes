@@ -1,5 +1,27 @@
 
+
+
 ==========================================================
+#2차시도
+
+def solution(s):
+    answer = 0
+    
+    list_s = list(s)
+    print(list_s)
+    
+    while list_s :
+        for i in range(len(list_s)) :
+            if list_s[i] != list_s[-i-1] :
+                list_s.pop()
+                break
+            elif list_s[i] == list_s[-i-1] :
+                answer+=1 
+            
+            if i == len(list_s) -1 :
+                print(list_s)
+                return answer
+            
 #1차시도
 #정확성과 효율성...0점
 
