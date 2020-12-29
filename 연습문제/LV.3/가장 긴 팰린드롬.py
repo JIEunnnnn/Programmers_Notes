@@ -1,5 +1,24 @@
+#LV.3 가장 긴 팰린드롬
+#문자열에서 가장 긴 회문을 찾기
+#
+#스택, 리스트 시도해보고 슬라이싱 이용하여 회문판별하는 것으로 구현
+#3차시도시. 회문판별구현 코드가 시간초과발생.. 4차시도에서 슬라이싱역순을 활용하여 재구현! 
+#회문은 역순으로 동일해야한다는것을 까먹지말자:)
 
+def palidrome(word) : #회문판별식 
+    return word == word[::-1]
 
+def solution(s):
+    answer = 0
+    pali_list = [1,]
+    
+    for i in range(len(s)) :
+        for j in range(i+1,len(s)) :
+            tmp = palidrome(s[i:j+1])
+            if tmp == True :
+                pali_list.append(len(s[i:j+1]))
+    
+    return max(pali_list)
 
 ==========================================================
 #3차시도 => 효율성..
