@@ -1,4 +1,28 @@
 ========================================================================
+#2차시도
+#효율성 최악...?
+#MAX값에서 -1 하는것이 가장 작은 야근지수 찾을수있음 ex) [5,9,13] N=5  
+
+def solution(n, works):
+    
+    while n > 0 :
+    
+            if max(works) > 0 :
+                idx = works.index(max(works))
+                works[idx] = works[idx] - 1
+                n-=1
+                
+            
+            else : #max==0일경우 
+                return 0
+                
+    print(works)
+    answer = 0
+    for i in works :
+        answer += i**2
+    return answer
+
+
 #1차시도
 #정확성및 효율성...최악^^7 
 
