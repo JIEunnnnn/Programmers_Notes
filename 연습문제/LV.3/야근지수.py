@@ -19,8 +19,8 @@ def solution(n, works):
                 n=0
             elif max(works) < n and max(works) > 0 :
                 idx = works.index(max(works))
-                works[idx] = works[idx] - n
-                n-=works[idx]
+                works[idx] = works[idx] - 1
+                n-=1
                 
             
             else : #max==0일경우 
