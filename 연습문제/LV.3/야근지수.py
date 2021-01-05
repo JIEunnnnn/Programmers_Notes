@@ -1,3 +1,32 @@
+#LV.3 야근지수
+#야근 피로도는 야근을 시작한 시점에서 남은 일의 작업량을 제곱하여 더한 값인데, 이 값을 최소값으로 반환시키는 문제
+#
+#max()는 O(n)이므로 이를 보완하기 위해 heapq모듈 활용, 최소값만 지원하므로 음수를 활용해 구현(어차피 제곱하면 값은 동일하니까!!)
+#
+
+import heapq
+
+def solution(n, works):
+    
+    if n > sum(works) :
+        return 0 
+    works = [-i for i in works] 
+    heapq.heapify(works)
+    print(works)
+    
+    while n > 0 :
+        
+        heapq.heappush(works, heapq.heappop(works)+1)
+        n-=1
+        #print(works)
+                
+        
+    print(works)
+    answer = 0
+    for i in works :
+        answer += i**2
+    return answer
+
 ========================================================================
 #2차시도
 #효율성 최악...?
