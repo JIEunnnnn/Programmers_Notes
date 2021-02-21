@@ -13,7 +13,9 @@ https://programmers.co.kr/learn/challenges
     set(집합/ 중복된 값을 갖지않는다) -> 중복된값들 처리할때 활용  
     list(리스트/ 동적배열)  
     str,tuple,bytes(시퀀스/ 불변 및 순서가있는 수열)
-    
+
+> DFS&BFS 
+>> DFS는 스택, BFS는 큐로 구현한다..!    
 <br>
 
 
