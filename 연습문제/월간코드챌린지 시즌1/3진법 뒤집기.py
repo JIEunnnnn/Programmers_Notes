@@ -5,7 +5,7 @@
 #나머지연산과 나눗셈활용해서 문제풀었다..ㅎ...
 #아니네.. int는 2,3,4 -> 10진법 변환시키는 함수니까 오류가나지...ㅎㅎ;;
 
-
+#다른사람풀이
 def solution(n):
 
     three = ''
@@ -24,6 +24,24 @@ def solution(n):
     return int(three,3)
 
 =====================================================================
+
+def solution(n):
+    tmp = n
+    abc = ''
+    
+    while tmp != 0 :
+        i = tmp % 3
+        tmp = tmp // 3 
+        abc+=str(i)
+    
+    print(abc)
+    
+    num = 0
+
+    
+    
+    return int(abc,3)
+
 
 def solution(n):
     tmp = n
