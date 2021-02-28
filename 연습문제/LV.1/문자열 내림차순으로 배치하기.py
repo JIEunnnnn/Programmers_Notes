@@ -9,8 +9,10 @@ def solution(s):
     tmp = []
     for i in s :
         tmp.append(i)
+    # tmp = list(s)
     
     tmp.sort(reverse=True)
     #print(tmp)
     
     return ''.join(tmp)
+
