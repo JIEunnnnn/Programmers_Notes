@@ -7,7 +7,7 @@
 
 from string import ascii_lowercase
 from string import ascii_uppercase
-
+#from string import ascii_letters
 
 def solution(s, n):
     answer = ''
