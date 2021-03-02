@@ -9,6 +9,8 @@ def solution(n):
     answer = []
     for i in str(n) :
         answer.append(i)
+    #answer = list(str(n))     
+   
         
     #print(answer)
     #print(sorted(answer, key= lambda x : x[0], reverse=True))
