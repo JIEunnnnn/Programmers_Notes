@@ -12,7 +12,9 @@ def solution(arr):
         min_value = min(arr)
         print(min_value)
         tmp = arr.index(min_value)
-        
         del arr[tmp]
+        
+        #arr.remove(min_value)
+    
     
     return arr
