@@ -1,4 +1,5 @@
---필요한 만 검색--
+#필요한 칼럼만 검색
 
 SELECT ANIMAL_ID, NAME
 FROM ANIMAL_INS 
+
