@@ -1,5 +1,6 @@
---limit 조건--
+#limit 조건
 
 SELECT NAME AS 이름
 FROM ANIMAL_INS 
 ORDER BY DATETIME ASC LIMIT 1 ;
+
