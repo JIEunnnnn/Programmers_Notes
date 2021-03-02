@@ -1,5 +1,6 @@
---중복제거 및 null 검사-- 
+#중복제거 및 null 검사
 
 SELECT COUNT(DISTINCT NAME) AS COUNT
 FROM ANIMAL_INS 
 WHERE NAME IS NOT NULL 
+
