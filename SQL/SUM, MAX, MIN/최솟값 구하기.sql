@@ -1,5 +1,4 @@
-  
---최값함수 이용-- 
+--최솟값함수 이용-- 
 
 SELECT MIN(DATETIME) AS 입장시간 
 FROM ANIMAL_INS
