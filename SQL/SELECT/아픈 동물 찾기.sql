@@ -1,5 +1,6 @@
---문자열조건검색--
+#문자열조건검색
 
 SELECT ANIMAL_ID, NAME
 FROM ANIMAL_INS 
 WHERE INTAKE_CONDITION LIKE 'Sick'
+
