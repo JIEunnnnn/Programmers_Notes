@@ -1,0 +1,11 @@
+  
+--최값함수 이용-- 
+
+SELECT MIN(DATETIME) AS 입장시간 
+FROM ANIMAL_INS
+
+------------OR----------------
+
+SELECT DATETIME 
+FROM ANIMAL_INS
+ORDER BY DATETIME ASC LIMIT 1
