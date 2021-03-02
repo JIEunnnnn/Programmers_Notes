@@ -1,4 +1,5 @@
--COUNT함수 이용해서 개수구하기--
+#COUNT함수 이용해서 개수구하기
 
 SELECT COUNT(ANIMAL_ID) AS COUNT
 FROM ANIMAL_INS 
+
