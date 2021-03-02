@@ -1,4 +1,4 @@
---그룹함수와 order by 이용!--
+#그룹함수와 order by 이용
 
 SELECT ANIMAL_TYPE, COUNT(ANIMAL_TYPE) AS COUNT 
 FROM ANIMAL_INS 
