@@ -1,5 +1,6 @@
---부정 문자열조건검색--
+#부정 문자열조건검색
 
 SELECT ANIMAL_ID, NAME
 FROM ANIMAL_INS 
 WHERE INTAKE_CONDITION NOT LIKE 'Aged'
+
