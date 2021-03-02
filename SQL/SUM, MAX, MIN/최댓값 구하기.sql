@@ -1,4 +1,4 @@
---최댓값함수 이용-- 
+#최댓값함수 이용
 
 SELECT MAX(DATETIME) AS 입장시간 
 FROM ANIMAL_INS
