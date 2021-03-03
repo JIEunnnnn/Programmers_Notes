@@ -42,7 +42,8 @@ https://programmers.co.kr/learn/challenges
                   
 >    5. math 라이브러리    
      sqrt #제곱근 연산시...(소수판별할때 제곱근으로 판별해야함 => 시간초과)  ex) math.sqrt(x)
-     round, ceil, floor, trunc #반올림, 올림, 내림, 버림                    ex) math.ceil(x)  
+     round, ceil, floor, trunc #반올림, 올림, 내림, 버림                    ex) math.ceil(x)
+     gcd #최대공약수 ex) gcd(n,m)
      
 >    6. heaqp 라이브러리    
     이진트리 기반의 최소 힙 자료구조 => 리스트를 매번 정렬해야하는 효율성을 감소시킬수있다. 
