@@ -22,3 +22,4 @@ def solution(num):
         
         if cnt >= 500 :
             return -1
+        
