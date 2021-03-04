@@ -4,6 +4,26 @@
 #
 #
 
+#시간초과발생
+def solution(d, budget):
+    answer = len(d)
+    d.sort(reverse=True)
+    
+    while True :
+        if sum(d) == budget :
+            return answer
+        elif sum(d) > budget :
+            
+            if sum(d) - budget in d  :
+                d.remove(sum(d) - budget)
+                answer -=1
+            else :
+                d.pop(0)
+                answer -=1
+            
+        
+    return answer
+
 #런타임에러 
 from itertools import combinations_with_replacement
 #중복조합 combinations_with_replacement(반복 가능한 객체, r)
