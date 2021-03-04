@@ -1,0 +1,8 @@
+#group by 활용 
+
+SELECT CART_ID AS 아이디
+FROM CART_PRODUCTS 
+WHERE NAME IN ('Milk', 'Yogurt')
+GROUP BY CART_ID
+    HAVING COUNT(DISTINCT NAME) >= 2 
+ORDER BY 아이디 ASC ;
