@@ -4,6 +4,23 @@
 #1. 문자열을 리스트화시켜 검사하는 알고리즘으로 구현 
 #
 
+#다른사람 풀이 
+def solution(skill, skill_trees):
+    answer = 0
+
+    for skills in skill_trees: 
+        skill_list = list(skill)
+
+        for s in skills:
+            if s in skill:
+                if s != skill_list.pop(0): 
+                    break
+        else:
+            answer += 1
+
+    return answer
+
+
 def solution(skill, skill_trees):
     answer = 0
     stack = list(skill)
