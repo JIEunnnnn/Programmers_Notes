@@ -11,7 +11,7 @@ def sumMatrix(A,B):
     A=np.array(A)
     B=np.array(B)
     answer=A+B
-    return answer.tolist()
+    return answer.tolist() #array 를 list 로 구현!! 
    
    
 def solution(arr1, arr2):
