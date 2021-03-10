@@ -19,7 +19,7 @@ https://programmers.co.kr/learn/challenges
 >> 
 > 진수변환  
 >> 10 -> 2진수 : bin(x) / format(x, 'b') <-> int(y, 2)  
-   10 -> 8진수 : oct(x) / format(x, 'o')  <-> int(y, 8)
+   10 -> 8진수 : oct(x) / format(x, 'o')  <-> int(y, 8)  
    10 -> 16진수 : hex(x) / format(x, 'h') <-> int(y, 16)
 
 <br>
