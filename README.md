@@ -16,6 +16,12 @@ https://programmers.co.kr/learn/challenges
 
 > DFS&BFS 
 >> DFS는 스택, BFS는 큐로 구현한다..!    
+>> 
+> 진수변환  
+>> 10 -> 2진수 : bin(x) / format(x, 'b') <-> int(y, 2)  
+   10 -> 8진수 : oct(x) / format(x, 'o')  <-> int(y, 8)
+   10 -> 16진수 : hex(x) / format(x, 'h') <-> int(y, 16)
+
 <br>
 
 
@@ -50,3 +56,4 @@ https://programmers.co.kr/learn/challenges
     
 >    7. numpy 라이브러리    
     행렬문제 풀때 유용한듯... 공부해야할라이브러리!! 
+    
