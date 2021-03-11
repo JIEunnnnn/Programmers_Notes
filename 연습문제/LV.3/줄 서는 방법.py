@@ -6,7 +6,6 @@
 
 import math
 
-
 def solution(n, k):
     answer = []
     
@@ -52,3 +51,4 @@ def solution(n, k):
     
     #print(result)
     return result
+
