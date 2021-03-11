@@ -45,11 +45,15 @@ https://programmers.co.kr/learn/challenges
      
 >    4. itertools 라이브러리  
      permutations #순열과 조합 관련 문제풀때 용이  #중복을 허용하지않는 순열  
-                  
+     combinations #조합  combinations(반복 가능한 객체, r)
+     product #중복을 허용하는 순열 product(반복 가능한 객체, repeat=1)   
+     combinations_with_replacement #중복을 허용하는 조합 
+    
 >    5. math 라이브러리    
      sqrt #제곱근 연산시...(소수판별할때 제곱근으로 판별해야함 => 시간초과)  ex) math.sqrt(x)  
      round, ceil, floor, trunc #반올림, 올림, 내림, 버림                    ex) math.ceil(x)  
      gcd #최대공약수 ex) math.gcd(n,m)  
+     factorial(x) #팩토리얼 구하는 함수
      
 >    6. heaqp 라이브러리    
     이진트리 기반의 최소 힙 자료구조 => 리스트를 매번 정렬해야하는 효율성을 감소시킬수있다. 
