@@ -45,7 +45,7 @@ https://programmers.co.kr/learn/challenges
      
 >    4. itertools 라이브러리  
      permutations #순열과 조합 관련 문제풀때 용이  #중복을 허용하지않는 순열  
-     combinations #조합  combinations(반복 가능한 객체, r)
+     combinations #조합  combinations(반복 가능한 객체, r)   
      product #중복을 허용하는 순열 product(반복 가능한 객체, repeat=1)   
      combinations_with_replacement #중복을 허용하는 조합 
     
