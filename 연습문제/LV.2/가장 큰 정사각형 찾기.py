@@ -40,8 +40,6 @@ def solution(board):
         print(width)
     
     #for i in board :
-            
-    
-    
+
 
     return answer
