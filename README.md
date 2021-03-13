@@ -15,7 +15,7 @@ https://programmers.co.kr/learn/challenges
     str,tuple,bytes(시퀀스/ 불변 및 순서가있는 수열)
 
 > DFS&BFS 
->> DFS는 스택, BFS는 큐로 구현한다..!    
+>> DFS는 스택, BFS는 큐(재귀구현X)로 구현한다..!    
 >> 
 > 진수변환  
 >> 10 -> 2진수 : bin(x) / format(x, 'b') <-> int(y, 2)  
