@@ -1,7 +1,7 @@
 #LV.3 단속카메라 
 #진입-진출기준으로 최소 몇개의 카메라 필요한가? 
 #
-#
+#생각을해보자! 진입카메라 기준으로 탐색하는과정을 다시 생각해보자..!
 #https://bladejun.tistory.com/43
 
 def solution(routes):
