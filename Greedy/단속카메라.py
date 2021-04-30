@@ -1,4 +1,5 @@
 
+#https://bladejun.tistory.com/43
 
 #1차시도=> 실패
 from collections import deque
