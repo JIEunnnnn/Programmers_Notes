@@ -1,4 +1,19 @@
 
+
+def solution(n):
+    if n<3:
+        return n
+    
+    tmp = [0] * (n+1)
+    tmp[1] = 1 
+    tmp[2] = 2 
+    
+    for i in range(3, n+1) :
+        tmp[i] = tmp[i-1] + tmp[i-2] #피보나치수열..
+    
+    return tmp[n] % 1234567
+
+==================================================
 #1차시도 시간초과
 from itertools import permutations 
 from collections import deque 
