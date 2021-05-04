@@ -15,13 +15,15 @@ https://programmers.co.kr/learn/challenges
     str,tuple,bytes(시퀀스/ 불변 및 순서가있는 수열)
 
 > DFS&BFS 
->> DFS는 스택, BFS는 큐(재귀구현X)로 구현한다..!    
->> 
+>> DFS는 스택(재귀ㅇ), BFS는 큐(재귀구현X)로 구현한다..!    
+
 > 진수변환  
 >> 10 -> 2진수 : bin(x) / format(x, 'b') <-> int(y, 2)  
    10 -> 8진수 : oct(x) / format(x, 'o')  <-> int(y, 8)  
    10 -> 16진수 : hex(x) / format(x, 'h') <-> int(y, 16)
-
+   
+> 문자열
+>> string.upper(), string.capitalize(), string.title()
 <br>
 
 
@@ -37,8 +39,9 @@ https://programmers.co.kr/learn/challenges
      reduce #리스트의 원소를 누적시(ex,총합) 활용
      
 >    2. collections 라이브러리  
-     counter #단어->알파벳갯수와 최다출현을 딕셔너리로 반환 ex) {'headgear': 2, 'eyewear': 1}  
-     defaultdict #dict형태를 데이터를 append(리스트메소드)사용하고 싶을 때 
+     counter([리스트]) #단어->알파벳갯수와 최다출현을 딕셔너리로 반환 ex) {'headgear': 2, 'eyewear': 1}  
+     defaultdict #dict형태를 데이터를 append(리스트메소드)사용하고 싶을 때
+     deque([리스트]) #pop, append() 시간초과 줄일수있음
      
 >    3. operator 라이브러리  
      itemgetter #다차원리스트 정렬시킬때 활용하는 라이브러리   
@@ -59,5 +62,11 @@ https://programmers.co.kr/learn/challenges
     이진트리 기반의 최소 힙 자료구조 => 리스트를 매번 정렬해야하는 효율성을 감소시킬수있다. 
     
 >    7. numpy 라이브러리    
-    행렬문제 풀때 유용한듯... 공부해야할라이브러리!! 
+    행렬문제 풀때 유용한듯... 공부해야할라이브러리!!  
+
+>   8. string 라이브러리    
+   string.ascii_lowercase # 소문자 abcdefghijklmnopqrstuvwxyz
+   string.ascii_uppercase # 대문자 ABCDEFGHIJKLMNOPQRSTUVWXYZ
+   string.ascii_letters # 대소문자 모두 abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
+   string.digits # 숫자 0123456789
     
