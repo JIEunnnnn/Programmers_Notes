@@ -23,7 +23,7 @@ https://programmers.co.kr/learn/challenges
    10 -> 16진수 : hex(x) / format(x, 'h') <-> int(y, 16)
    
 > 문자열
->> string.upper(), string.capitalize(), string.title()
+>> string.upper(), string.capitalize(), string.title() / string.lower()
 <br>
 
 
