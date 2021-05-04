@@ -20,10 +20,11 @@ def solution(n, costs):
                            #1-2-3 에서 0-3 추가할경우, past 에 3 : 1 를 저장하고 3 : 0 으로 입력 {0: 0, 1: 1 , 2: 1, 3: 1, 4: 4}
                            #cycle을 for 문을 돌려 1 에 해당되는 값을 가진 key들 업데이트 시키기 
                            # {0: 0, 1: 0 , 2: 0 , 3: 0, 4: 4}
+                    
         cycle[i[1]] = cycle[i[0]] #i[1] 과 i[0] 연결 
         
         for k,v in cycle.items() :
-            if v == past :
+            if v == past : #기존에 연결된것들도 비교해보면서 재연결해야하므로 
                 cycle[k] = cycle[i[0]]
                 
         if bridge == n-1 :
