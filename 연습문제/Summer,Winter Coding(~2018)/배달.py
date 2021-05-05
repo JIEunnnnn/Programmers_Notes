@@ -1,8 +1,60 @@
+#Summer,Winter Coding(~2018) 배달
+#K보다 적은시간이 걸리는 마을개수 반환
+#
+#maps를 정의하는과정에서 오류 발생 및 탐색하는 과정중 조건이 애매?하게 설정함ㄷ 
+#https://post.naver.com/viewer/postView.nhn?volumeNo=26748173&memberNo=33264526
 
+from copy import deepcopy
+from collections import deque 
+import math 
 
+def willchk(x, maps, visited, k) :
+    #x좌표 k라는 주어진 시간
+    maps = deepcopy(maps)
+    visited = deepcopy(visited) 
+    cnt = 0
+    que = deque([x])
+    visited[x] = 0 
+    while que :
+        tx = que.popleft()
+        for y, val in enumerate(maps[tx]) : #다음마을 탐색
+            if val != 0 :
+                
+                if visited[y] > visited[tx] + val and visited[tx] + val <= k :
+                    #현재좌표 + 갈예정인마을 <= K + 기존의 가중치보다 작을경우
+                    
+                    visited[y] = visited[tx] + val
+                    que.append(y)
+    
+    return len([i for i in visited if i<= k])
+                    
+    
 
+def solution(N, road, K):
+    answer = 1
 
-
+    road.sort(key = lambda x : x[0])
+    
+    maps = [[ 0 for i in range(N)] for j in range(N) ]
+    willdo = []
+    for frm,to,w in road :
+        
+        #maps 를 정의하는 과정중에서 오류발생.. 
+        #두 마을 a, b를 연결하는 도로는 여러 개가 있을 수 있습니다!!
+        if maps[frm-1][to-1] == 0 and maps[to-1][frm-1] == 0:             
+            maps[frm-1][to-1], maps[to-1][frm-1] = w,w
+            
+        else :
+            if w < maps[frm-1][to-1] : #가중치가 작을경우!! 
+                maps[frm-1][to-1], maps[to-1][frm-1] = w,w
+                
+    
+    x = 0
+    visited = [math.inf for i in range(N)]
+    #print(maps)
+    answer = willchk(x, maps, visited, K)
+    
+    return answer
 
 ===========================================================
 #2차시도 
