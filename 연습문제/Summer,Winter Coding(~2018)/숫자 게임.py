@@ -4,6 +4,19 @@
 #
 #
 
+#2차시도
+def solution(A, B):
+    answer = 0
+    
+    A.sort()
+    B.sort()
+    
+    for i,v in enumerate(A) :
+        if v < B[i] :
+            answer += 1 
+    
+    return answer
+
 #1차시도 => 안될걸 알고있었죠... 
 from collections import deque
 import math 
