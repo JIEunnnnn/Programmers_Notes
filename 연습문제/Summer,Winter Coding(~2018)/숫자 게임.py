@@ -1,8 +1,8 @@
 #Summer/Winter Coding(~2018) 숫자 게임
+#B가 이길수있는 최대값구하기 
 #
-#
-#
-#
+#처음에, A와 B를 순차적으로 비교하는 알고리즘으로 구현
+#생각해보니까, A에게 진다면 다음순서의 A를 이기면되니까, 이 경우만 생각하여 알고리즘 구현..ㄷㄷ 
 
 from collections import deque
 def solution(A, B):
