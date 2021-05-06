@@ -4,6 +4,22 @@
 #
 #
 
+from collections import deque
+def solution(A, B):
+    answer = 0
+    
+    A.sort(reverse = True)
+    B.sort(reverse = True)
+    deB = deque(B)
+    #deB.sort(reverse = True )    
+    for i,v in enumerate(A) :
+        if deB[0] > v :
+            answer += 1
+            deB.popleft()
+    
+    return answer
+
+================================================
 #2차시도
 def solution(A, B):
     answer = 0
