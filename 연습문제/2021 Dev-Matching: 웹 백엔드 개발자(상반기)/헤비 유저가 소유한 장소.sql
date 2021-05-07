@@ -1,3 +1,4 @@
+#서브쿼리
 
 SELECT A.ID, A.NAME, A.HOST_ID
 FROM PLACES A
