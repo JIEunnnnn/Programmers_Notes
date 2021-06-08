@@ -65,8 +65,8 @@ https://programmers.co.kr/learn/challenges
     행렬문제 풀때 유용한듯... 공부해야할라이브러리!!  
 
 >   8. string 라이브러리    
-   string.ascii_lowercase # 소문자 abcdefghijklmnopqrstuvwxyz
-   string.ascii_uppercase # 대문자 ABCDEFGHIJKLMNOPQRSTUVWXYZ
-   string.ascii_letters # 대소문자 모두 abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
-   string.digits # 숫자 0123456789
+   string.ascii_lowercase # 소문자 abcdefghijklmnopqrstuvwxyz  
+   string.ascii_uppercase # 대문자 ABCDEFGHIJKLMNOPQRSTUVWXYZ  
+   string.ascii_letters # 대소문자 모두 abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ  
+   string.digits # 숫자 0123456789  
     
