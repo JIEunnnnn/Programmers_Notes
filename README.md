@@ -55,7 +55,8 @@ https://programmers.co.kr/learn/challenges
 >    5. math 라이브러리    
      sqrt #제곱근 연산시...(소수판별할때 제곱근으로 판별해야함 => 시간초과)  ex) math.sqrt(x)  
      round, ceil, floor, trunc #반올림, 올림, 내림, 버림                    ex) math.ceil(x)  
-     gcd #최대공약수 ex) math.gcd(n,m)  
+     gcd #최대공약수 ex) math.gcd(n,m)
+     x * y // gcd(x,y) #최소공배수  
      factorial(x) #팩토리얼 구하는 함수
      
 >    6. heaqp 라이브러리    
