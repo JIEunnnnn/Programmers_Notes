@@ -1,4 +1,22 @@
+from itertools import permutations 
 
+def solution(k, dungeons):
+    
+    answer = 0
+    for i in permutations(dungeons, len(dungeons)) :
+        #print(i)
+        hp = k 
+        count = 0
+        for p in i :
+            if hp >= p[0] :
+                hp -= p[1]
+                count +=1 
+            else :
+                break 
+        if count > answer :
+            answer = count
+    
+    return answer
 
 #1차시도 
 from collections import deque
